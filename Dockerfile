@@ -7,6 +7,7 @@ RUN apk update \
              openssh-client \
              curl \
              zip \
+             sshpass \
   && rm -rf /var/cache/apk/*
 
 RUN mkdir -p ~/.ssh \
