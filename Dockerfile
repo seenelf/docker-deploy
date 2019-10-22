@@ -8,4 +8,7 @@ RUN apk update \
              curl \
              zip \
              sshpass \
+	     git \
   && rm -rf /var/cache/apk/*
+
+RUN mkdir -p ~/.ssh/ && touch ~/.ssh/config && echo "StrictHostKeyChecking no" >> ~/.ssh/config
